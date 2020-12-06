@@ -74,6 +74,7 @@
   border: none;
   outline: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   
   &:hover {
     background-color: #e8b600;
