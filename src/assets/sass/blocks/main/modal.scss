@@ -1,0 +1,12 @@
+.modal__text {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: #5d02d4;
+}
+
+@media (max-width: $tablet-width) {
+  .modal__text {
+    font-size: 30px;
+   }
+}

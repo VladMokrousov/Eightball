@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  // src: url("/assets/fonts/opensans-regular.woff2") format("woff2"),
+  //   url("/assets/fonts/opensans-regular.woff") format("woff");
+  src: url("/Eightball/dist/assets/fonts/opensans-regular.woff2") format("woff2"),
+    url("/Eightball/dist/assets/fonts/opensans-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  // src: url("/assets/fonts/opensans-bold.woff2") format("woff2"),
+  //   url("/assets/fonts/opensans-bold.woff") format("woff");
+  src: url("/Eightball/dist/assets/fonts/opensans-bold.woff2") format("woff2"),
+    url("/Eightball/dist/assets/fonts/opensans-bold.woff") format("woff");
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+@keyframes move {
+  from {bottom: 30px;}
+  50% {bottom: 40px;}
+  to {bottom: 30px;}
+}
+
+@keyframes show {
+  from {opacity: 0.1;}
+  to {opacity: 1;}
+}
+
+@media (max-width: $max-resolution) {
+  .container {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: $desktop-width) {
+  .container {
+    width: 668px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .container {
+    width: 260px;
+    margin: 0 auto;
+  }
+}
+

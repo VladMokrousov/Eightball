@@ -1,0 +1,46 @@
+extends ../layout/templateForSite
+
+block variables
+  - var title = "Нажми. Найди. Воплоти!";
+
+block head
+  link(rel='stylesheet' href='https://s.pageclip.co/v1/pageclip.css' media='screen')
+
+block main
+  main
+    h1.visually-hidden Найди свою бизнес-идею
+    .intro
+      .intro__logo-wrapper
+        img.intro__logo-image(src="assets/img/logo.svg" width="50" height="50" alt="Логотип сайта")
+        span.intro__logo-text Eightball
+      .container            
+        span.intro__title--first-part Десятки бизнес-идей
+        span.intro__title--second-part Найди свою! 
+        .intro__arrow-bottom
+
+    section.found-ideas
+      .container
+        h2.visually-hidden Поиск идеи для бизнеса
+        button.found-ideas__btn Получить идею
+        .found-ideas__wrapper
+          p.found-ideas__text Нажми на кнопку, чтобы получить первую идею
+          a.found-ideas__link.visually-hidden(href='#')
+  
+    section.present-ideas
+      .container
+        h2.visually-hidden Предложи свою идею
+        .present-ideas__text-wrapper
+          span.present-ideas__title У тебя есть идеи получше? 
+          span.present-ideas__text Предложи их и помоги проекту развиться)
+        .present-ideas__form-wrapper
+          form.pageclip-form.present-ideas__form(action='https://send.pageclip.co/dxHM4ashH4kEHnuT2pPnvJyBmrQnRav2' method='post')
+            .present-ideas__form-content
+              textarea.present-ideas__user-text(name='user-idea' placeholder='Опиши свои идеи' required)
+              button.pageclip-form__submit.pageclip-form__submit--dark-loader.present-ideas__btn(type='submit')
+                span Отправить
+              
+block script
+  script(src='https://s.pageclip.co/v1/pageclip.js' charset='utf-8')
+  script(src='assets/js/main.js')
+  
+  

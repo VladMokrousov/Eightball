@@ -1,0 +1,152 @@
+.present-ideas {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right,#5d02d4,#30006e);
+}
+
+.present-ideas__text-wrapper {
+  padding-top: 20vh;  
+}
+
+.present-ideas__title  {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 70px;  
+  font-weight: 700;
+}
+
+.present-ideas__text {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.present-ideas__form-wrapper {
+  padding-top: 70px;
+}
+
+.present-ideas__form {
+  width: 980px;
+  height: 300px;
+  background-color: #fff;
+  box-shadow: 10px 10px 0px 0px rgba(227, 178, 0, 0.9);
+}
+
+.present-ideas__form-content {
+  width: 880px;
+  margin: 0 auto;
+}
+
+.present-ideas__user-text{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 880px;
+  height: 180px;
+  padding: 0;
+  padding-left: 15px;
+  padding-top: 10px;
+  border: none;
+  resize: none;
+  border: 1px solid #d4d4d4;
+  outline: none;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  box-sizing: border-box;
+
+  &:hover, &:focus {
+    border: 1px solid #5d02d4;
+  }
+}
+
+.present-ideas__user-text::placeholder {
+  color: #919191;
+}
+
+.present-ideas__btn {
+  padding: 10px 30px;
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
+  background-color: #ffc800;
+  background: linear-gradient(to bottom right,#ffc800,#ffc800);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #e8b600;
+    background: linear-gradient(to bottom right,#ffc800,#e8b600);
+  }
+}
+
+@media (max-width: $max-resolution) {
+  .present-ideas__title  {
+    font-size: 60px;
+  }
+
+  .present-ideas__form {
+    width: 880px;  
+  }
+
+  .present-ideas__form-content,
+  .present-ideas__user-text {
+    width: 780px;  
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .present-ideas__title  {
+    font-size: 45px;
+  }
+
+  .present-ideas__form {
+    width: 658px;  
+  }
+
+  .present-ideas__form-content,
+  .present-ideas__user-text {
+    width: 558px;  
+  }
+}
+
+@media (max-width: $tablet-width) {  
+  .present-ideas__title  {
+    font-size: 29px;
+  }
+
+  .present-ideas__text {
+    font-size: 18px;
+  }
+
+  .present-ideas__form-wrapper {
+    padding-top: 50px;
+  }
+
+  .present-ideas__form {
+    width: 250px;  
+  }
+
+  .present-ideas__form-content,
+  .present-ideas__user-text {
+    width: 210px;
+  }
+
+  .present-ideas__user-text {
+    margin-top: 15px;
+    height: 200px;
+  }
+}
+
+@media (max-width: $tablet-width) and (max-height: 700px) {
+  .present-ideas__text-wrapper {
+    padding-top: 15vh;
+  }
+}
+
+@media (max-width: $tablet-width) and (max-height: 600px) {
+  .present-ideas__text-wrapper {
+    padding-top: 6vh;
+  }
+}
