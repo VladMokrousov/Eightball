@@ -2,7 +2,7 @@
   "name": "Eightball",
   "short_name": "8ball",
   "icons": [{
-      "src": "google-touch-icon.png",
+      "src": "assets/google-touch-icon.png",
       "sizes": "512x512"
   }],
   "background_color": "#ffffff",

@@ -1,12 +1,11 @@
 import "./assets/css/normalize.css";
 import "./assets/sass/style.scss";
 
-import setFormOptions from './js/set-form-options.js';
+import setFullscreenHeight from "./js/setFullscreenHeight.js";
+setFullscreenHeight();
+import setFormOptions from "./js/set-form-options.js";
 setFormOptions();
-import showRandomIdea from './js/show-random-idea.js';
+import showRandomIdea from "./js/show-random-idea.js";
 showRandomIdea();
-import scroll from './js/scroll.js';
+import scroll from "./js/scroll.js";
 scroll();
-
-
-
